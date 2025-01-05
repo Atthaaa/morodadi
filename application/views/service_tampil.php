@@ -37,14 +37,13 @@
 </div>
 
 <div class="container
-text-center">
+text-center mt-5">
     <?php
 // Nomor WhatsApp tujuan
 $phoneNumber = "6285172042004"; // Ganti dengan nomor WhatsApp tujuan (format internasional tanpa tanda "+")
 // Pesan teks
 $message = urlencode("Reservasi sekarang, Untuk Service Radiator Anda");
 ?>
-
 <a class="btn btn-danger" href="https://wa.me/<?= $phoneNumber ?>?text=<?= $message ?>" target="_blank" class="whatsapp-button">
     Reservasi Sekarang
 </a>
