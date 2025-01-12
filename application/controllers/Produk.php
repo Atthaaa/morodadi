@@ -35,26 +35,26 @@ class Produk extends CI_Controller
             $alamat = $this->session->userdata('alamat_member'); // Pastikan 'alamat' disimpan di session
 
           // Format pesan WhatsApp
-$pesan = 
-    "Pembelian Sparepart - Morodadi Radiator%0A" .
-    "Nama: " . $nama . "%0A" .
-    "Alamat: " . $alamat . "%0A" .
-    "Nama Barang: " . $produk['nama_produk'] . "%0A" .
-    "Harga: Rp " . number_format($produk['harga_produk'], 0, ',', '.') . "%0A" .
-    "Jumlah: 1"; 
+    $pesan = 
+        "Pembelian Sparepart - Morodadi Radiator%0A" .
+        "Nama: " . $nama . "%0A" .
+        "Alamat: " . $alamat . "%0A" .
+        "Nama Barang: " . $produk['nama_produk'] . "%0A" .
+        "Harga: Rp " . number_format($produk['harga_produk'], 0, ',', '.') . "%0A" .
+        "Jumlah: 1"; 
 
-// Nomor WhatsApp tujuan
-$nomor_wa = "6285172042004";
+    // Nomor WhatsApp tujuan
+    $nomor_wa = "6285172042004";
 
-// Link foto profil WhatsApp (ganti dengan URL foto profil yang valid)
-$foto_profil = "https://example.com/foto-profil.jpg"; // Ubah URL sesuai foto Anda
+    // Link foto profil WhatsApp (ganti dengan URL foto profil yang valid)
+    $foto_profil = "https://example.com/foto-profil.jpg"; // Ubah URL sesuai foto Anda
 
-// Redirect ke WhatsApp dengan foto profil dan teks
-redirect("https://api.whatsapp.com/send?phone=" . $nomor_wa . "&text=" . $pesan . "&media=" . $foto_profil);
+    // Redirect ke WhatsApp dengan foto profil dan teks
+    redirect("https://api.whatsapp.com/send?phone=" . $nomor_wa . "&text=" . $pesan . "&media=" . $foto_profil);
 
-        } else {
-            show_404();
+            } else {
+                show_404();
+            }
         }
-    }
 
 }

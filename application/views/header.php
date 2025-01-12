@@ -33,6 +33,9 @@
           <li class="nav-item">
               <a class="nav-link" href="<?= base_url('aboutus'); ?>">Tentang Kami</a>
           </li>
+          <li class="nav-item">
+            <a href="<?php echo base_url('keranjang') ?>" class="nav-link">Keranjang</a>
+          </li>
 
         </ul>
         <?php if ($this->session->userdata('id_member')) : ?>
