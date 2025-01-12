@@ -67,39 +67,19 @@
 
 </style>
 <div class="container mt-5">
-    <div class="row">
-        <?php foreach ($produk as $value): ?>
-        <div class="col-md-4">
-            <div class="card border-0 shadow-sm">
-                <img src="<?= $this->config->item('url_produk') . $value['foto_produk']; ?>" alt="" class="img-fluid">
-                <div class="card-body text-center">
-                  <h6><?= $value['nama_produk']; ?></h6>
-                  <p class="lead">Rp <?= number_format($value['harga_produk']); ?></p>
-                </div>
-            </div>
-            <div class="mb-3 mt-3">
-              <?php if (isset($_SESSION['keranjang'][$value['id_produk']])): ?>
-                  <form action="<?= base_url('keranjang/update'); ?>" method="post" class="d-inline">
-                      <input type="hidden" name="id_produk" value="<?= $value['id_produk']; ?>">
-                      <button type="submit" name="action" value="kurangi" class="btn btn-secondary btn-sm">-</button>
-                  </form>
-                  <span class="mx-2">
-                      <?= $_SESSION['keranjang'][$value['id_produk']]['jumlah']; ?>
-                  </span>
-                  <form action="<?= base_url('keranjang/update'); ?>" method="post" class="d-inline">
-                      <input type="hidden" name="id_produk" value="<?= $value['id_produk']; ?>">
-                      <button type="submit" name="action" value="tambah" class="btn btn-secondary btn-sm">+</button>
-                  </form>
-              <?php else: ?>
-                  <form action="<?= base_url('keranjang/tambah'); ?>" method="post">
-                      <input type="hidden" name="id_produk" value="<?= $value['id_produk']; ?>">
-                      <button type="submit" class="btn btn-primary btn-sm">Tambahkan ke Keranjang</button>
-                  </form>
-              <?php endif; ?>
+  <div class="row">
+    <?php foreach ($produk as $key => $value) : ?>
+    <div class="col-md-4">
+      <a href="<?= base_url('produk/order/' . $value['id_produk']); ?>" class="text-decoration-none">
+        <div class="card border-0 shadow-sm">
+          <img src="<?php echo $this->config->item('url_produk') . $value['foto_produk'] ?>" alt="">
+          <div class="card-body text-center">
+            <h6><?php echo $value['nama_produk'] ?></h6>
+            <p class="lead">Rp <?php echo number_format($value['harga_produk']) ?></p>
           </div>
         </div>
-        <?php endforeach; ?>
+      </a>
     </div>
+    <?php endforeach; ?>
+  </div>
 </div>
-
-
