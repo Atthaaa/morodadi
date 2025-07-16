@@ -86,10 +86,10 @@
         <div class="column">
             <h2>Sejarah Bengkel Radiator</h2>
             <p>
-                Berawal dari sebuah bengkel kecil yang berada di daerah Jakarta Utara, kini Dokter Mobil sudah memiliki 29 buah cabang bengkel yang tersebar di seluruh Indonesia dan di Malaysia dengan nama Autotech.
+                Kampung Radiator di Dusun Malangsari, Wonogiri, bermula dari kebutuhan warga setempat yang jauh dari bengkel besar untuk memperbaiki radiator kendaraan mereka secara mandiri. Keahlian ini kemudian diwariskan secara turun-temurun dan berkembang menjadi keterampilan khusus yang menghidupi banyak keluarga. Seiring waktu, reputasi kampung ini sebagai pusat servis radiator terpercaya meluas hingga menarik pelanggan dari luar daerah. Keahlian ini menjadi sumber penghasilan utama sekaligus identitas budaya warga, yang terus beradaptasi dengan perkembangan teknologi agar tetap relevan.
             </p>
             <p>
-                Didirikan sejak tahun 2015 oleh Ricky Sen & Thayne Lika atau timnya, berangkat dari keresahan banyak pemilik mobil yang “kurang”.
+                Didirikan sejak tahun 1963 oleh Supardi
             </p>
         </div>
     </div>
@@ -97,12 +97,12 @@
     <!-- Map Section -->
 <div class="map" style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
     <h4 style="text-align: center; color: red;">Lokasi Kami</h4>
-    <div style="width: 300px; height: 300px; position: relative;">
+    <div style="width: 90%; height: 300px; position: relative;">
         <iframe 
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d506076.7499070571!2d110.07723664999996!3d-7.712670699999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a441005d31ea9%3A0xd0e1a76cb0587f3e!2sMoro%20Dadi%20Radiator!5e0!3m2!1sen!2sid!4v1734848421060!5m2!1sen!2sid" 
             width="100%" 
             height="100%" 
-            style="border:0;" 
+            style="border:;" 
             allowfullscreen="" 
             loading="lazy">
         </iframe>

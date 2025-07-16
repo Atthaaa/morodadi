@@ -5,7 +5,7 @@
   overflow: hidden;
   transition: all 0.3s ease-in-out;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 300px;
+  width: 100%;
 }
 
 .card:hover {
@@ -94,7 +94,7 @@
       <div class="row">
         <?php foreach ($produk as $key => $value) : ?>
         <div class="col-md-3 mt-3">
-          <a href="<?= base_url('produk/order/' . $value['id_produk']); ?>" class="text-decoration-none">
+          <a href="<?= base_url('produk/detail/' . $value['id_produk']); ?>" class="text-decoration-none">
           <div class="card border-0 shadow-sm">
             <img src="<?php echo $this->config->item('url_produk') . $value['foto_produk'] ?>" alt="">
             <div class="card-body text-center">

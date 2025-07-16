@@ -22,9 +22,7 @@ class Mproduk extends CI_Model
     function detail($id_produk)
     {
         // Detail sesuai produk dengan id yang login
-        $this->db->where('id_member', $this->session->userdata('id_member'));
         $this->db->where('id_produk', $id_produk);
-        $this->db->join('kategori', 'produk.id_kategori = kategori.id_kategori', 'left');
         $q = $this->db->get('produk');
         $d = $q->row_array();
 
@@ -38,4 +36,12 @@ class Mproduk extends CI_Model
 
         return $q->row_array(); // Mengembalikan satu baris data
     }
+
+    function tampil_berdasarkan_tipe($tipe_mobil)
+    {
+    $this->db->where('tipe_mobil', $tipe_mobil);
+    $q = $this->db->get('produk');
+    return $q->result_array();
+    }
+
 }

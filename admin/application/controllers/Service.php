@@ -29,7 +29,7 @@ class Service extends CI_Controller
         $inputan = $this->input->post();
 
         // form validation
-        $this->form_validation->set_rules("nama_service", "Nama service", "required");
+        $this->form_validation->set_rules("nama_service", "Nama artikel", "required");
         
         // atur pesan bindo
         $this->form_validation->set_message("required", "%s wajib diisi");
@@ -43,7 +43,7 @@ class Service extends CI_Controller
 
 
             //pesan dilayar
-            $this->session->set_flashdata('pesan_sukses', 'Data service tersimpan');
+            $this->session->set_flashdata('pesan_sukses', 'Data artikel tersimpan');
 
             //redirect ke filter service utk tampil service
 
@@ -66,7 +66,7 @@ class Service extends CI_Controller
         $this->Mservice->hapus($id_service);
 
         //pesan di layar
-        $this->session->set_flashdata('pesan_sukses', 'service telah terhapus');
+        $this->session->set_flashdata('pesan_sukses', 'Artikel telah terhapus');
 
         //redirect ke service utk tampil data
         redirect('service', 'refresh');
@@ -82,7 +82,7 @@ class Service extends CI_Controller
         $inputan = $this->input->post();
 
         // form validation
-        $this->form_validation->set_rules("nama_service", "Nama service", "required");
+        $this->form_validation->set_rules("nama_service", "Nama artikel", "required");
 
         // atur pesan bindo
         $this->form_validation->set_message("required", "%s wajib diisi");
@@ -92,7 +92,7 @@ class Service extends CI_Controller
             // Jalankan fungsi edit
             $this->Mservice->edit($inputan, $id_service);
             // Pesan
-            $this->session->set_flashdata('pesan_sukses', 'service telah diubah');
+            $this->session->set_flashdata('pesan_sukses', 'Artikel telah diubah');
             // Redirect
             redirect('service', 'refresh');
         }

@@ -1,7 +1,7 @@
 <div class="container">
-  <h5>Selamat datang admin marketplace</h5>
+  <h5>Selamat datang admin Radiator Morodadi</h5>
   <p class="lead">
-    Melalui panel ini anda dapat mengelola kategori produk dan transaksi yang terjadi di marketplace
+    Melalui panel ini anda dapat mengelola service dan penjualan produk yang terjadi
   </p>
 
   <div id="grafik-member-distrik"></div>

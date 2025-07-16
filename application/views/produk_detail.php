@@ -5,19 +5,14 @@
     </div>
     <div class="col-md-6">
       <h1><?= $produk['nama_produk']; ?></h1>
-      <span class="badge bg-dark"><?= $produk['nama_kategori']; ?></span>
-      <p class="lead"><?= number_format($produk['harga_produk']); ?></p>
-
-      <?php if ($produk['id_member'] !== $this->session->userdata('id_member')): ?>
-      <form action="" class="my-2" method="post">
-        <div class="input-group">
-          <input type="number" name="jumlah" id="" class="form-control" min="1">
-          <button type="submit" class="btn btn-primary">Beli</button>
-        </div>
-      </form>
-      <?php endif; ?>
-      <br>
       <p><?= $produk['deskripsi_produk']; ?></p>
+      <p class="lead">Rp. <?= number_format($produk['harga_produk']); ?></p>
+
+      <form action="<?= base_url('produk/order/' . $produk['id_produk']); ?>" class="my-2" method="post">
+          <button type="submit" class="btn btn-primary" style="width: 200px;">Beli</button>
+      </form>
+      <br>
+      
     </div>
   </div>
 </div>
