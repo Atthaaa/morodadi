@@ -61,8 +61,6 @@
     font-weight: 500;
 }
 </style>
-<<<<<<< HEAD
-
 <div class="sparepart">
     <section class="bg-light py-5">
         <div class="container">
@@ -89,22 +87,3 @@
 <a href="<?php echo site_url('produk/rekomendasi'); ?>" class="float" title="Bingung Mencari Radiator Yang Cocok?">
     <i class="fa fa-star my-float"></i>
 </a>
-=======
-<div class="container mt-5">
-  <div class="row">
-    <?php foreach ($produk as $key => $value) : ?>
-    <div class="col-md-4">
-      <a href="<?= base_url('produk/order/' . $value['id_produk']); ?>" class="text-decoration-none">
-        <div class="card border-0 shadow-sm">
-          <img src="<?php echo $this->config->item('url_produk') . $value['foto_produk'] ?>" alt="">
-          <div class="card-body text-center">
-            <h6><?php echo $value['nama_produk'] ?></h6>
-            <p class="lead">Rp <?php echo number_format($value['harga_produk']) ?></p>
-          </div>
-        </div>
-      </a>
-    </div>
-    <?php endforeach; ?>
-  </div>
-</div>
->>>>>>> 4efb021255da0c707ff86b857607f48a978a1101

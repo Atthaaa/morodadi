@@ -4,6 +4,24 @@
             <h3 class="text-center">Hasil Rekomendasi Radiator Terbaik</h3>
         </div>
         <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped table-hover">
+                    <thead>
+                        <tr class="text-center">
+                            <th>Peringkat</th>
+                            <th>Nama Produk</th>
+                            <th>Skor Rekomendasi</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Apa prioritas anda?</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
             <p class="text-center">Berikut adalah urutan produk radiator yang paling kami rekomendasikan untuk Anda berdasarkan perhitungan sistem.</p>
             <hr>
             <div class="table-responsive">
